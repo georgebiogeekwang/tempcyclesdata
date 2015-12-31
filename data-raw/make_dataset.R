@@ -8,7 +8,19 @@ load("data-raw/unfiltered.data.alldata.final.rda")
 filtered.data <- subset(unfiltered.data,
                         c.all.redfit.passed == TRUE)
 
+filtered.data$region                                      <- "Temperate"
+filtered.data$region[which(abs(filtered.data$lat) >= 60)] <- "Polar"
+filtered.data$region[which(abs(filtered.data$lat) < 25)]  <- "Tropical"
+northern <- which(filtered.data$lat > 0)
+southern <- which(filtered.data$lat < 0)
+filtered.data$region[northern] <- paste("North",
+                                        filtered.data$region[northern])
+filtered.data$region[southern] <- paste("South",
+                                        filtered.data$region[southern])
+filtered.data$region <- as.factor(filtered.data$region)
+
 tempcyclesdata                <- filtered.data[,c(1:2,5:8)]
+tempcyclesdata$region         <- filtered.data$region
 tempcyclesdata$shore_dist_km  <- filtered.data$shore.dist.m / 1000
 tempcyclesdata$start_date     <- filtered.data$start.date
 tempcyclesdata$end_date       <- filtered.data$end.date
