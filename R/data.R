@@ -10,9 +10,7 @@
 #'   \item{lat}{latitude, negative values indicate South}
 #'   \item{lon}{longitude, negative values indicate West}
 #'   \item{el}{elevation, in meters}
-#'   \item{period}{time period. "all": all data for the station,
-#'                              "stdr": standard reference period,
-#'                               or middle of five year window.}
+#'   \item{period}{time period. "all": all data for the station, "stdr": standard reference period, or middle of five year window.}
 #'   \item{region}{geographical zone}
 #'   \item{shore_dist_km}{Distance to shoreline (GSHHG 2)}
 #'   \item{start_date}{start of data window}

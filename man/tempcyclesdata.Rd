@@ -12,7 +12,7 @@ summary(tempcyclesdata)
 if (require("dplyr")) {
 tempcyclesdata %>%
   filter(period == "stdr") %>%
-  group_by(region)
+  group_by(region) %>%
   summarise(mean_DTC = mean(DTC))
 }
 }
