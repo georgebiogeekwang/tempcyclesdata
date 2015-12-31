@@ -11,4 +11,6 @@ Depends:
     R (>= 3.2.2)
 License: GPL-2
 LazyData: true
+Suggests:
+    dplyr
 RoxygenNote: 5.0.1
