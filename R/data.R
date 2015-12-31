@@ -10,7 +10,9 @@
 #'   \item{lat}{latitude, negative values indicate South}
 #'   \item{lon}{longitude, negative values indicate West}
 #'   \item{el}{elevation, in meters}
-#'   \item{period}{time period. "all": all data for the station, "stdr": standard reference period. or middle of five year window.}
+#'   \item{period}{time period. "all": all data for the station,
+#'                              "stdr": standard reference period,
+#'                               or middle of five year window.}
 #'   \item{region}{geographical zone}
 #'   \item{shore_dist_km}{Distance to shoreline (GSHHG 2)}
 #'   \item{start_date}{start of data window}
@@ -33,5 +35,12 @@
 #'   \item{mean_resid}{mean per-sample residual, C}
 #'   \item{mean_resid_red}{mean per-sample residual using redfit corrected values, C}
 #' @source Wang & Dillon NCC 2014. doi:10.1038/nclimate2378
+#' #' @examples
+#' summary(tempcyclesdata)
+#' if (require("dplyr")) {
+#' tempcyclesdata %>%
+#'   filter(period == "stdr") %>%
+#'   group_by(region) %>%
+#'   summarise(mean_DTC = mean(DTC))
 #' }
 "tempcyclesdata"
