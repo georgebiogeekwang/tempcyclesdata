@@ -1,6 +1,6 @@
 Package: tempcyclesdata
-Title: Climate data from Wang and Dillon, NCC 4, 988-922, 2014
-Version: 0.0.0.9000
+Title: Climate Data from Wang and Dillon
+Version: 1.0.0
 Authors@R: person("George", "Wang", email = "biogeek@gmail.com", role = c("aut", "cre"))
 Description: This is the data companion package to the package tempcycles.
     This package includes the metadata, linear, and cycling parameters from
