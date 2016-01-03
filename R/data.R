@@ -28,6 +28,8 @@
 #'   \item{ATC}{Annual temperature cycling range, (2 * amplitude), C}
 #'   \item{DTC_red}{Redfit AR1 corrected DTC, C}
 #'   \item{ATC_red}{Redfit AR1 corrected ATC, C}
+#'   \item{day_tau}{tau lag for day signal}
+#'   \item{year_tau}{tau lag for year signal}
 #'   \item{day_phase}{DTC phase}
 #'   \item{year_phase}{ATC phase}
 #'   \item{lnDA}{\emph{ln}DTC / ATC}
