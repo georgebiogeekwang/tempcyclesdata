@@ -22,8 +22,8 @@ filtered.data$region <- as.factor(filtered.data$region)
 tempcyclesdata                <- filtered.data[,c(1:2,5:8)]
 tempcyclesdata$region         <- filtered.data$region
 tempcyclesdata$shore_dist_km  <- filtered.data$shore.dist.m / 1000
-tempcyclesdata$start_date     <- filtered.data$start.date
-tempcyclesdata$end_date       <- filtered.data$end.date
+tempcyclesdata$start_date     <- as.character(filtered.data$start.date)
+tempcyclesdata$end_date       <- as.character(filtered.data$end.date)
 tempcyclesdata$num_samp       <- filtered.data$n.samples
 tempcyclesdata$Ta_mean        <- filtered.data$Ta.mean
 tempcyclesdata$Ta_min         <- filtered.data$Ta.min
@@ -35,6 +35,8 @@ tempcyclesdata$DTC            <- filtered.data$day.amp
 tempcyclesdata$ATC            <- filtered.data$year.amp
 tempcyclesdata$DTC_red        <- filtered.data$dtc.red.corr.samp
 tempcyclesdata$ATC_red        <- filtered.data$atc.red.corr.samp
+tempcyclesdata$day_tau        <- filtered.data$day_tau
+tempcyclesdata$year_tau       <- filtered.data$year_tau
 tempcyclesdata$day_phase      <- filtered.data$day.phase
 tempcyclesdata$year_phase     <- filtered.data$year.phase
 tempcyclesdata$lnDA           <- filtered.data$ratio

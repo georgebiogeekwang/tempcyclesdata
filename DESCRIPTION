@@ -1,11 +1,11 @@
 Package: tempcyclesdata
 Title: Climate Data from Wang and Dillon
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: person("George", "Wang", email = "biogeek@gmail.com", role = c("aut", "cre"))
 Description: This is the data companion package to the package tempcycles.
     This package includes the metadata, linear, and cycling parameters from
     "Recent geographic convergence in diurnal and annual temperature cycling
-    flattens global thermal profiles", Wang & Dillon, Nature Climate Chanage,
+    flattens global thermal profiles", Wang & Dillon, Nature Climate Change,
     4, 988-992 (2014). doi:10.1038/nclimate2378.
 Depends:
     R (>= 3.2.2)
