@@ -35,8 +35,8 @@ tempcyclesdata$DTC            <- filtered.data$day.amp
 tempcyclesdata$ATC            <- filtered.data$year.amp
 tempcyclesdata$DTC_red        <- filtered.data$dtc.red.corr.samp
 tempcyclesdata$ATC_red        <- filtered.data$atc.red.corr.samp
-tempcyclesdata$day_tau        <- filtered.data$day_tau
-tempcyclesdata$year_tau       <- filtered.data$year_tau
+tempcyclesdata$day_tau        <- filtered.data$day.tau
+tempcyclesdata$year_tau       <- filtered.data$year.tau
 tempcyclesdata$day_phase      <- filtered.data$day.phase
 tempcyclesdata$year_phase     <- filtered.data$year.phase
 tempcyclesdata$lnDA           <- filtered.data$ratio
